@@ -6,10 +6,10 @@ $CFG = new stdClass();
 
 $CFG->dbtype    = 'mariadb';
 $CFG->dblibrary = 'native';
-$CFG->dbhost    = 'mariadb';
+$CFG->dbhost    = 'localhost';
 $CFG->dbname    = 'bitnami_moodle';
-$CFG->dbuser    = 'bn_moodle';
-$CFG->dbpass    = '';
+$CFG->dbuser    = 'root';
+$CFG->dbpass    = 'paul';
 $CFG->prefix    = 'mdl_';
 $CFG->dboptions = array (
   'dbpersist' => 0,
@@ -19,17 +19,16 @@ $CFG->dboptions = array (
 );
 
 if (empty($_SERVER['HTTP_HOST'])) {
-  $_SERVER['HTTP_HOST'] = '127.0.0.1:8080';
+  $_SERVER['HTTP_HOST'] = 'localhost:8000';
 }
-if (isset($_SERVER['HTTPS']) && $_SERVER['HTTPS'] == 'on') {
-  $CFG->wwwroot   = 'https://' . $_SERVER['HTTP_HOST'];
-} else {
-  $CFG->wwwroot   = 'http://' . $_SERVER['HTTP_HOST'];
-}
-$CFG->dataroot  = '/bitnami/moodledata';
+$CFG->wwwroot   = 'http://localhost:8000';
+$CFG->dataroot  = 'C:/myProjects/dbi/noodle_project/moodledata';
 $CFG->admin     = 'admin';
 
-$CFG->directorypermissions = 02775;
+$CFG->directorypermissions = 0777;
+
+$CFG->debug = 32767; // DEBUG_DEVELOPER
+$CFG->debugdisplay = 1;
 
 require_once(__DIR__ . '/lib/setup.php');
 
