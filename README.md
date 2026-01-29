@@ -1,4 +1,6 @@
-# Noodle Project (Moodle)
+# DBI-LMS (Noodle Project)
+
+Digital Bridge Institute LMS based on Moodle LMS.
 
 This is a containerized Moodle environment.
 

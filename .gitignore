@@ -4,6 +4,7 @@
 
 # Environment variables
 .env
+*.md
 
 # IDE settings
 .idea
