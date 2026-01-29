@@ -1,0 +1,21 @@
+# Composer dependencies
+/vendor
+/node_modules
+
+# Environment variables
+.env
+
+# IDE settings
+.idea
+.vscode
+*.sublime-project
+*.sublime-workspace
+.DS_Store
+Thumbs.db
+
+# Moodle Data (Files, Sessions, Cache)
+# This is usually distinct from the source code, but ensuring we don't accidentally commit data if paths change
+moodledata
+
+# Log files
+*.log
