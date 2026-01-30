@@ -18,5 +18,7 @@ Thumbs.db
 # This is usually distinct from the source code, but ensuring we don't accidentally commit data if paths change
 moodledata
 
+moodle-work-plan.md
 # Log files
 *.log
+
