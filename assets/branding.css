@@ -1,0 +1,21 @@
+/* DBI Branding */
+:root {
+    --dbi-primary: #003366;
+    --dbi-secondary: #f0f0f0;
+    --dbi-accent: #0055a5;
+    --dbi-text: #333333;
+}
+
+/* Example usage for Boost theme injection */
+.navbar-brand {
+    background-color: var(--dbi-primary);
+}
+
+body {
+    background-color: var(--dbi-secondary);
+    color: var(--dbi-text);
+}
+
+a {
+    color: var(--dbi-accent);
+}
