@@ -51,3 +51,7 @@ This is a containerized Moodle environment.
     ```bash
     docker-compose restart
     ```
+
+## Deployment
+
+- [cPanel Deployment Guide](DEPLOYMENT_CPANEL.md)
